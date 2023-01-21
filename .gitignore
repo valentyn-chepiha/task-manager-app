@@ -1,0 +1,8 @@
+/.idea/
+/readme_img/
+/diagrams/
+/log/
+/data/
+/target/
+
+*.iml

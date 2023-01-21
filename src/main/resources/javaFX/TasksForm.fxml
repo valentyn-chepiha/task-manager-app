@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import jfxtras.scene.control.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.edu.sumdu.j2se.chepiha.tasks.controller.TasksForm">
+   <children>
+      <SplitPane fx:id="mfSplitPane" dividerPositions="0.6036789297658863" prefHeight="480.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="478.0" prefWidth="367.0">
+               <children>
+                  <CheckBox fx:id="chkCalendar" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" text="Calendar" />
+                  <Label layoutX="97.0" layoutY="6.0" text="from" />
+                  <Label layoutX="99.0" layoutY="33.0" text="to" />
+                  <ListView fx:id="lvTasks" layoutY="56.0" prefHeight="421.0" prefWidth="357.0" />
+                  <LocalDateTimeTextField fx:id="dtStartCalendar" layoutX="131.0" layoutY="2.0" prefHeight="25.0" prefWidth="157.0" />
+                  <LocalDateTimeTextField fx:id="dtEndCalendar" layoutX="131.0" layoutY="29.0" prefHeight="25.0" prefWidth="157.0" />
+                  <Button fx:id="btnShowCalendar" layoutX="301.0" layoutY="16.0" mnemonicParsing="false" text="Show" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="478.0" prefWidth="228.0">
+               <children>
+                  <Button fx:id="btnCreate" layoutX="178.0" layoutY="5.0" mnemonicParsing="false" text="Create" />
+                  <Button fx:id="btnEdit" layoutX="133.0" layoutY="5.0" mnemonicParsing="false" text="Edit" />
+                  <Label fx:id="tLabelName" layoutX="4.0" layoutY="41.0" text="Task name:" />
+                  <TextField fx:id="tName" layoutX="4.0" layoutY="58.0" prefHeight="25.0" prefWidth="223.0" />
+                  <CheckBox fx:id="tRepeat" layoutX="6.0" layoutY="125.0" mnemonicParsing="false" text="Task is repeated" />
+                  <CheckBox fx:id="tActive" layoutX="6.0" layoutY="95.0" mnemonicParsing="false" text="Task is active" />
+                  <Label fx:id="tLabelStartTime" layoutX="4.0" layoutY="150.0" text="Time:" />
+                  <Label fx:id="tLabelEndTime" layoutX="5.0" layoutY="207.0" text="End time:" />
+                  <Label fx:id="tLabelInterval" layoutX="5.0" layoutY="264.0" text="Repeat interval:" />
+                  <LocalDateTimeTextField fx:id="tStartTime" layoutX="4.0" layoutY="167.0" prefHeight="25.0" prefWidth="223.0" />
+                  <LocalDateTimeTextField fx:id="tEndTime" layoutX="4.0" layoutY="224.0" prefHeight="25.0" prefWidth="223.0" />
+                  <TextField fx:id="tInterval" layoutX="4.0" layoutY="281.0" />
+                  <Button fx:id="btnDelete" layoutX="154.0" layoutY="439.0" mnemonicParsing="false" text="Delete task" />
+                  <Button fx:id="btnSave" layoutX="187.0" layoutY="405.0" mnemonicParsing="false" text="Save" />
+                  <Button fx:id="btnCancel" layoutX="128.0" layoutY="405.0" mnemonicParsing="false" text="Cancel" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <AccordionPane />
+   </children>
+</AnchorPane>
